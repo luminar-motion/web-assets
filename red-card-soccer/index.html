@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RED CARD — Arcade Soccer</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="title-block">
+          <p class="eyebrow">MIDWAY-STYLE ARCADE</p>
+          <h1>RED CARD</h1>
+          <p class="tagline">Calcio sporco. Tackle devastanti. L'arbitro è un bersaglio.</p>
+          <button id="start-btn" type="button">CALCIA</button>
+          <div class="controls">
+            <p><kbd>WASD</kbd> / frecce — muovi</p>
+            <p><kbd>J</kbd> / <kbd>Spazio</kbd> — tiro / passaggio</p>
+            <p><kbd>K</kbd> — scivolata</p>
+            <p><kbd>L</kbd> — pugno / gomito</p>
+            <p><kbd>Tab</kbd> — cambia giocatore</p>
+          </div>
+        </div>
+      </div>
+      <div id="hud" class="hud hidden">
+        <div class="scoreboard">
+          <span id="home-name">BLU</span>
+          <span id="score">0 — 0</span>
+          <span id="away-name">ROSSI</span>
+        </div>
+        <div class="meta">
+          <span id="clock">45:00</span>
+          <span id="status">PARTITA IN CORSO</span>
+        </div>
+      </div>
+      <div id="banner" class="banner hidden"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
